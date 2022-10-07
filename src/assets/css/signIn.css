@@ -1,0 +1,128 @@
+:root{
+    --red: #e50914;
+    --white: #fff;
+    --headings: #e5e5e5;
+    --background-black: #000000bf;
+    --black: #000;
+    --grey: #808080;
+    --grey-with-opacity: #80808050; 
+    
+    --box-shadow-btn: 0 1px 0 rgb(0 0 0 / 45%);
+    --box-shadow-red: 0 2px 0 rgba(255, 0, 0, 0.5);
+    --btn-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    background-color: var(--black);
+    background-image: url("/src/assets/images/netflixBackgroundImage.jpeg");
+    color: var(--grey);
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar .left{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+
+.navbar .left img{
+    width: 180px;
+    margin: 20px;
+}
+
+.signIn{
+    position: absolute;
+    background-color: var(--background-black);
+    border-radius: 8px;
+    top: 30%;
+    padding: 3rem;
+    margin-left: 35%;
+    margin-top: -100px; 
+    width: 30rem;
+    box-shadow: var(--box-shadow-btn);
+    height: 40rem;
+}
+
+h1{
+    display: flex;
+    float: left;
+    padding-left: 16px;
+    color: var(--white);
+    font-size: 36px;
+}
+
+form{
+    margin: 24px;
+}
+
+.signIn-email{
+    padding: 4px;
+    padding-bottom: 8px;
+}
+
+.signIn-email input{
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--grey-with-opacity);
+    border-radius: 4px;
+    border: none;
+    color: var(--white);
+    font-size: medium;
+}
+
+.signIn-password{
+    padding: 4px;
+}
+
+.signIn-password input{
+    color: var(--black);
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    font-size: medium;
+}
+
+button{
+    display: block;
+    background-color: var(--red);
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    font-weight: 400;
+    width: 100%;
+}
+
+.signIn-btn{
+    margin-bottom: 2rem;
+}
+
+.help {
+    display: inline-block;
+    margin-left: 7rem;
+}
+
+.newNetflix{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.captcha{
+    font-size: small;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
