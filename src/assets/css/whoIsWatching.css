@@ -1,0 +1,102 @@
+:root{
+    --red: #e50914;
+    --white: #fff;
+    --headings: #e5e5e5;
+    --background-black: #141414;
+    --black: #000;
+    --grey: #80808050; 
+    --heading-grey: #808080;
+    
+    --box-shadow-btn: 0 1px 0 rgb(0 0 0 / 45%);
+    --box-shadow-red: 0 2px 0 rgba(255, 0, 0, 0.5);
+    --btn-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar .left {
+    height: 100%;
+    display: flex;
+    float: left;
+}
+
+.navbar .left img{
+    width: 140px;
+    margin: 20px;
+}
+
+.container{
+    padding-top: 7rem;
+}
+
+.whoIsWatching{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: var(--white);
+    font-size: 32px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.container img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.profile-image:hover{
+    border: solid;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--white);
+}
+
+.manage-profiles{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+h1{
+    font-weight: 200;
+}
+
+h2{
+    color: var(--heading-grey);
+    border-style: solid;
+    width: max-content;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: large;
+    margin-top: 2rem;
+}
+
+h3{
+    display: flex;
+    color: var(--heading-grey);
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px; 
+    margin-top: 0.5rem;
+} 
+
