@@ -56,7 +56,7 @@ body{
 } 
 
 button{
-    -webkit-tap-highlight-color: ;
+    -webkit-tap-highlight-color: red;
 }
 
 h1{
