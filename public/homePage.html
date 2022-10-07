@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Homepage</title>
+    <!-- CSS link-->
+    <link rel="stylesheet" href="/src/assets/css/homePage.css">
+    <!-- JavaScript tag-->
+    <script src="js/homepage.js" defer></script>
+    <!-- Vue.js tag-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body> 
+    <!-- ID to use later with Vue and JS which contains all my HTML for the homepage.html file-->
+    <div id="netflixApplication">    
+        <!-- Navigation bar left and right with movie categories, icons and profile-->
+        <nav id="navbar" class="navbar">
+            <!-- Navbar left containes all the movie genre's and when you click on it, it goes to the row of the selected genre except for the watchlist goes to your watchlist -->
+            <div class="nav-left">
+                <a href="homepage.html">
+                    <img src="/src/assets/images/netflixLogo.png" id="netflixlogo" alt="Netflix Logo"> 
+                </a>
+                <ul class="primary-navigation">
+                    <li class="category">
+                        <a class="browse-active" href="/public/homePage.html">Home</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#comingSoon">Coming Soon</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#trendingNow">Trending Now</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#comedies">Comedy</a>
+                    </li>
+                    <li class="category">
+                        <button><a class="watchlist" href="/public/watchList.html">My Watchlist</a></button>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#documentaries">Documentaries</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navbar right, this is where all the other buttons are, including the search(which I removed, I just couldn't get it right), notifications and profile  -->
+            <div class="nav-right">
+
+                <ul class="list-nav-right">
+                    <li class="category">
+                        <a class="browse" href="#Kids">Kids</a>
+                    </li>
+                </ul>
+                <button class="notfications-btn"><img class="notification" src="/src/assets/images/notificationIcon.png" alt="Notifications"></button>
+                <button class="my-profile"><img class="my-profile" src="/src/assets/images/NetflixProfileOne.png" alt="My Profile"></button>
+            </div>
+        </nav>
+
+        <!-- Movie trailer of a cool movie that is on Netflix as the main attraction when opening the homepage-->
+        <div class="movie-trailer">
+            <video src="video/bullet-2-trailer.mov" 
+            autoplay=""
+            title="Bullet Train | Brad Pitt, Bad Bunny, Aaron Taylor-Johnson, Sandra Bullock and Joey King | Official Trailer | Netflix"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            id="trailer"></video>
+        </div>  
+        
+        <!-- There are 6 rows of slides, they contain the appropriate movies/TV shows filtered by ID, and put in rows with the 'add to watchlist button' which allows the button to add the movie or TV show to the watchlist-->
+        <div class="card-slices">
+            <h1 id="comingSoon">Coming Soon</h1> <!-- The heading of each row and this is what the movies & tv shows are filtered by because all of them have more then one genre I decided to go on ID's to make it more simple and neat-->
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in moviesComingSoonFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div class="card">
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                       
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 1-->
+        <div class="card-slices">
+            <h1 id="trendingNow">Trending Now</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in trendingNowFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="card-slices">
+            <h1 id="documentaries">Documentaries</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in documentariesFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="card-slices">
+            <h1 id="comedies">Comedies</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in comedyMoviesFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>    
+
+        <!-- Category 4 -->
+        <div class="card-slices">
+            <h1 id="realStories">Real Stories</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in realStoriesFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>   
+
+        <div class="card-slices">
+            <h1 id="foodWine">Food & Wine</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in foodWineFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </div>           
+</body>
+<footer>
+
+</footer>
+</html>

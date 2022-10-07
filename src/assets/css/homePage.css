@@ -1,0 +1,236 @@
+:root{
+    --red: #e50914;
+    --white: #fff;
+    --headings: #e5e5e5;
+    --background-black: #141414;
+    --black: #000;
+    --grey: #80808050; 
+    --heading-grey: #808080;
+    
+    --box-shadow-btn: 0 1px 0 rgb(0 0 0 / 45%);
+    --box-shadow-red: 0 2px 0 rgba(255, 0, 0, 0.5);
+    --btn-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    font-family: sans-serif;
+    color: var(--white);
+    margin: 0;
+}
+
+nav{
+    background: transparent;
+}
+
+.nav-left{
+    display: flex;
+    float: left;
+}
+
+#netflixlogo{
+    width: 120px;
+    height: 60px;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.category .browse-active{
+    color: var(--white);
+    font-weight: 800;
+    font-size: large;
+    text-decoration: none;
+}
+
+.primary-navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2.2rem;
+}
+
+.watchlist{
+    background-color: var(--black);
+    border: none;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.category button{
+    background-color: var(--black);
+    border: none;
+    cursor: pointer;
+}
+
+.nav-right{
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+#search-btn{
+    width: 32px;
+    height: 32px;
+}
+
+#searchBox{
+    background-color: var(--grey);
+    width: max-content;
+    height: 2rem;
+    margin: 1rem;
+    color: var(--white);
+    border: var(--headings);
+    border-style: inset;
+    font: italic;
+    font-size: 14px;
+    padding: 1rem;
+}
+
+.notification{
+    width: 32px;
+    height: 32px;
+}
+
+.primary-navigation{
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.extra{
+    list-style: none;
+}
+
+.browse{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.category{
+    color: var(--white);
+    text-decoration: none;
+    list-style: none;
+}
+
+.notfications-btn{
+    background-color: var(--black);
+    border: none;
+}
+
+.my-profile{
+    background-color: var(--black);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation-play-state: running;
+    border-radius: 5px;
+}
+
+.movieImage{
+    display: flex;
+}
+
+.displayMovie{
+    background-color: var(--black);
+    border: 4px;
+    width: 340px;
+    margin: 5px;
+    margin: 5px;
+}
+/*  (Ek het die hover regtig probeer maak werk maar dan kry ek die die add button geskuif nie, ongelukkig hover hy nie vandag nie)
+.displayMovie:hover{
+    border-radius: 10px;
+    transform: scale(1.5);
+    box-shadow: 0 0 2px #000a;
+    object-fit: contain;
+} */
+
+
+.movie-link{
+    width: 150px;
+    height: 100px;
+}
+
+.displayClassMainAxis {
+    display: flex;
+    overflow-x: scroll;
+    padding: 15px;
+    margin-left: 1.9rem;
+    margin-top: 0;
+}
+
+h1{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.add-Btn{
+    display: flex;
+    background: var(--red);
+    opacity: 50%;
+    color: var(--white);
+    cursor: pointer;
+    float: right;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 8px;
+    box-shadow: var(--box-shadow-red);
+    box-shadow: 2px;
+}
+
+.add-Btn:hover{
+    display: flex;
+    background: var(--red);
+    opacity: 100%;
+    color: var(--white);
+    cursor: pointer;
+    float: right;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 8px;
+    box-shadow: var(--box-shadow-red);
+    box-shadow: 2px;
+}
+
+/* .card {
+    position: relative;
+    width: 50%;
+}
+
+
+.card .add-Btn{
+    position: absolute;
+    bottom: 0%;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+} */
+
+
+
