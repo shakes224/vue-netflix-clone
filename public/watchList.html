@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+        <!-- CSS link-->
+        <link rel="stylesheet" href="css/watchlist.css">
+        <!-- JavaScript tag-->
+        <script src="js/watchlist.js" defer></script>
+        <!-- Vue.js tag-->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="netflixWatchlist"> <!-- This is here for the vue instance to connect with the entire framework and to help with processing-->
+        <nav id="navbar" class="navbar"> <!-- This is where all the navigation is, all the movies/series genre's & my watchlist-->
+            <div class="nav-left">
+                <a href="homepage.html">
+                    <img src="images/netflix-logo.png" id="netflixlogo" alt="Netflix Logo"> 
+                </a>
+                <ul class="primary-navigation">
+                    <li class="category">
+                        <a class="browse" href="homepage.html">Home</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#TV shows">TV Shows</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#Movies">Movies</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#New & Popular">New & Popular</a>
+                    </li>
+                    <li class="category">
+                        <button><a class="watchlist active" href="watchlist.html">My Watchlist</a></button>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#Coming Soon">Coming Soon</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="watchlist-items"> <!-- This div is all about the watch list and what you have added to the list and this will render and show the list that you've selected on the previous page-->
+            <h1>My List </h1> 
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in watchlist" class="displayMovie">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                        </div>
+                        <p class="title">{{event.title}}</p> <!-- This fetches the title from the movies class in the JavaScript and shows the image and title all togerther in a list form with a wrap-direction-->
+                        <div class="removeListItem"><button class="removeButton" @click="removeWatchlistItem(index)">Remove from List</button></div> <!-- This button removes the list item from the watch list-->
+                </div>
+            </div>
+        </div>
+
+    </div>   
+</body>
+</html>
