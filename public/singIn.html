@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive compatibility for content -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign In Page</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/signIn.css" />
+  </head>
+  <body>
+    <!-- Navbar containing the logo for Netflix -->
+    <nav class="navbar">
+        <div class="left">
+            <img src="images/netflix-logo.png" alt="Netflix Logo"/>
+    </div>
+
+      <!-- The sign in card, this is where you enter your sign-in/log-in details so that you can log into your account to watch movies and series on the app -->
+      <!-- There are requirements needed for you to log in and only emails and passwords are accepted -->
+    <div class="signIn">
+      <h1>Sign In</h1>
+      <form method="post" class="login" action>
+        <div class="signIn-inputs">
+          <div class="signIn-email">
+            <input
+              type="email"
+              name="signIn-email"
+              placeholder="Email or phone number"
+              required
+            />
+          </div>
+          <div class="signIn-password">
+            <input
+              type="password"
+              name="signIn-password"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+          </div>
+        </div>
+        <!-- Sign in button to proceed to the next page -->
+        <button class="signIn-btn">
+          <a
+            href="whoIsWatching.html"
+            style="color: whitesmoke; text-decoration: none"
+            >Sign In</a
+          >
+        </button>
+        <!-- The following are there for display and just for designing purposes and no functionality has been added -->
+        <input type="checkbox" checked="checked">Remember me</input>
+        
+        <p class="help">Need help?</p>
+
+        <div class="newNetflix">
+          <p>New to Netflix? Sign up now.</p>
+
+          <p class="captcha">
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
