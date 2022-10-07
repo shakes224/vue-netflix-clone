@@ -1,0 +1,113 @@
+:root{
+    --red: #e50914;
+    --white: #fff;
+    --headings: #e5e5e5;
+    --background-black: #141414;
+    --black: #000;
+    --grey: #80808050; 
+    --heading-grey: #808080;
+    
+    --box-shadow-btn: 0 1px 0 rgb(0 0 0 / 45%);
+    --box-shadow-red: 0 2px 0 rgba(255, 0, 0, 0.5);
+    --btn-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black);
+    font-family: sans-serif;
+    color: var(--white);
+    margin: 0;
+}
+
+.nav-left{
+    display: flex;
+}
+
+#netflixlogo{
+    width: 120px;
+    height: 60px;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+.primary-navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2.2rem;
+}
+
+.watchlist{
+    background-color: var(--black);
+    border: none;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.category button{
+    background-color: var(--black);
+    border: none;
+    cursor: pointer;
+}
+
+
+.primary-navigation{
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.browse{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.category{
+    color: var(--white);
+    text-decoration: none;
+    list-style: none;
+}
+
+.displayMovie{
+    padding: 10px;
+    border: var(--heading-grey);
+    border-width: 1px;
+    border-style: solid;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.title{
+    font-size: large;
+}
+
+h1{
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+
+p{
+    font-weight: bold;
+    margin-top: none;
+}
+
+.displayClassMainAxis {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.9rem;
+}
+
+.removeButton {
+    background: transparent;
+    color: var(--red);
+    border: none;
+    margin-bottom: 1rem;
+    float: right;
+    cursor: pointer;
+}
