@@ -1,6 +1,11 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id ="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld title="Cats" msg="Hello world" link="www.cats.com"/>
+    <HelloWorld title="Big Cats" msg="Hello Shakes" link="www.bigcats.com"/>
+    <HelloWorld title="Bigger Cats" msg="Hello Everyone" link="wwwbigger.cats.com"/>
+    <HelloWorld title="Biggest Cats" msg="Hello to all" link="www.biggestcats.com"/>
+  </div>
 </template>
 
 <script>
