@@ -226,58 +226,59 @@ let homepageVue = new Vue({ //el property of the Vue instance.
             },
     
             {
-                id: "foodWine",
-                title: "Heavenly Bites Mexico",
-                genre: "Social & Cultural Docs, Docuseries, Mexican",
+                id: "actionThrillers",
+                title: "Black and blue",
+                genre: "Action thriller",
                 comingSoon: false,
-                availDate: 2022,
-                description: "Can you imagine adding lime, candy, seafood and even meat to your beer? Mexicans certainly do, and the result is an addictive drink called michelada",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbItvuqbSXeRBI3YlnYqgzKvgD3wFeCPeFMIlBSQGqWGxxdQoSBdmTgsRBD0v1lhDTnF4jYEqn_HsZwOSggmVbu1Sx_TziaoiXP8ktr3vhwaaiW0KC1UtweFdtQpQsBdxNFe.jpg?r=6e5",
-                preview: "https://youtu.be/6V9AkCnvyVQ",
+                availDate: 2019,
+                description: "When a rookie cop inadertently captures corrupt officers committing a murder on tape, loyalties are tested when she's hunted for the footage",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTS_hfKTCqBhdVRPombKNeJ0_B78KY7zaGfOcaq1m0J6Opv-gV_klb7XKJ140IebmBxdVqvpjxEr95s45af_R7dcIgaoFclaS7g.jpg?r=116",
+                preview: "https://www.youtube.com/watch?v=-JJHswVN5Ik",//Black and blue done
             },
 
             {
-                id: "foodWine",
-                title: "K Food Show, a Nation of Broth",
-                genre: "Social & Cultural Docs, Docuseries, Korean",
+                id: "actionThrillers",
+                title: "The siege of Jadotville done",
+                genre: "Action military, based on real life",
                 comingSoon: false,
-                availDate: 2022,
-                description: "A humble bowl of good soup sits at the heart of every Korean table. Take off on a journey that explores the history and evolution of korean soup.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbZF0ULJjIRtcd2YkV1G04v4-MRVD1lrJEESyHflJXKShXC8MgdmEGANtNPzytMA9Qntvk8_lRTBSRtEdeFzT7pewyqCJfepgbU.webp?r=45a",
-                preview: "https://youtu.be/eI_LjETc_Ak",
+                availDate: 2016,
+                description: "Besieged by overwhelming enemy forces, Irish soldiers on an U.N peacekeeping mission in Africa defend their outmost in this story.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABele2smEze0w0zvcxsXLtV06-yYyvRyHBIKiLnxMMNXnAAZNXdv8VL5gkrbcJAGlBUeDM8aym81N0hWqgVrtOadY5xBQBFzTEIhObFpkm2_VebpknOxpEdur1ykLahGbVR21.jpg?r=e9d",
+                preview: "https://youtu.be/eI_LjETc_Ak", // The siege of Jadotville done
             },
 
             {
-                id: "foodWine",
-                title: "Salt Fat Acid Heat",
-                genre: "Docuseries, Travel & Adventure Documentaries, TV Shows Based on Books",
+                id: "actionThrillers",
+                title: "Arrow",
+                genre: "Crime, Based on Comics, Action",
                 comingSoon: false,
-                availDate: 2018,
-                description: "Chef and food writer Samin Nosrat travels the world to explore four basic keys to wonderful cooking, serving up feasts and helpful tips along the way.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfdVMCf4lEhKNdDVllvaIYin9IDBTs7f5Onc3skn0YAkHNZaMfA-jwULrHRKOtXWN6wvhlTMtGtZwi3EmpMzSjpnVfZmUPJDIG6xpbvT3earR2HEmMzZm2ok6wa6OAInAbSI.jpg?r=e7d",
-                preview: "https://youtu.be/2oKbs4jAf7M",
+                availDate: 2019,
+                description: "Presumed dead for 5 years before being discovered on a remote Pacific island, billionare playboy Oliver returns home a changed man.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfvrd4Y728WPHJLWxM5nc5H0telb2_ty5HYOs_pDzGpFpCfxpDCzOASEa5DD6jd3KILnLJ2eT8E-Iicw1WuSqNJowZR70AQsN3A.jpg?r=19e",
+                preview: "https://youtu.be/2oKbs4jAf7M",//YT vid needed arrow done
+                
             },
 
             {
-                id: "foodWine",
-                title: "The Game Changers",
+                id: "actionThrillers",
+                title: "Assassin's creed",
                 genre: "Documentary Films, Food & Travel TV, Lifestyle",
                 comingSoon: false,
-                availDate: 2018,
-                description: "Meeting visionary scientists and top athletes, a UFC fighter embarks on a quest to find the optimal diet for human performance and health.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTcwYoX3D2DSSx9bzDlDbtFghOus8bZw9EnWaijV0xJ1xP2Aar7tVNODOHde-5ASq8XmZLs1yUSl8TiSiK4o-TV70NJKtVLITeA.webp?r=93b",
-                preview: "https://youtu.be/iSpglxHTJVM",
+                availDate: 2016,
+                description: "In this adapttation of the critically acclaimed video game franchise, a man on death row is rescued from execution by a mysterious organization.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa9Q09T7lbNf1ktflr0C2CNfnToal6ttnQgMexCFPOn39qgj9qG0NQRpbqOsIWhYeZwyv22A07wC61eFHARURui05zfVsTjhymM.jpg?r=dac",
+                preview: "https://youtu.be/iSpglxHTJVM",//YT vid needed Assassin
             },
 
             {
-                id: "foodWine",
-                title: "Down to Earth with Zac Efron",
-                genre: "Docuseries, Travel & Adventure Documentaries, Science & Nature Docs",
+                id: "actionThrillers",//must fix
+                title: "Athena",
+                genre: "Action thriller",
                 comingSoon: false,
-                availDate: 2020,
+                availDate: 2022,
                 description: "Actor Zac Efron journeys around the world with wellness expert Darin Olien in a travel show that explores healthy, sustainable ways to live.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSEfoVDNmscbTvwUks_XUnZnDNAVGl2098UYnfZCUpRdwzieTxMYvlE83HOs3IxZ8GiCbSHWoNWBDcdLPIhM71jPhLhwEWrmr5INH9sRY1MFZZPUJibtbZk1Uz7UD3rQHFKG.jpg?r=776",
-                preview: "https://youtu.be/oMzYiY5wcHU",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABct29rL9I-y3V0IaouT3RvgKzCHqqbbrotthIsGJsvQHE7JGiTDG2-ZLE4nJEGVJZ668Lf9Qan-S7PO-o5BLm-edKuy3XUhkKcRTtQ1zwj4RP8L0hPUIfBMf8DUeN_8ay7mt.jpg?r=ed7",
+                preview: "https://www.youtube.com/watch?v=vRunUkdkK8s",
             },
 
             {
@@ -292,14 +293,14 @@ let homepageVue = new Vue({ //el property of the Vue instance.
             },
 
             {
-                id: "comingSoon",
-                title: "Do Revenge",
-                genre: "Teen Movies, Comedies",
+                id: "comingSoon",//Done
+                title: "Tyler Perry's A Madea Homecoming",
+                genre: "Comedies",
                 comingSoon: true,
-                availDate: 2023,
-                description: "A dethroned queen bee at posh private high school strikes a secret deal with an unassuming new student to exact revenge on each other's enemies.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABT6N5MPb-V95sTnSr5cltJDRQ0-YjCu4Dcv7VKxAuS1RlIq4YAfXTewPmD27Su8NcdHp1fRpsSfcefMrIwQvDtY394k7vfAWcFnXHM1UsBYTA6lyuDWCtYYsf6q-C6FM91ND.jpg?r=11b",
-                preview: "https://youtu.be/rK-JQU_bShc",
+                availDate: 2022,
+                description: "Madea's back - Hallelujer! And she's not putting up with any nonsense as family drama erupts at her great-grandson's college graduation celebration.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUJpM9CPy2oJ23YqWvqs0BO4m4k0axeHDvhAvWKR6sG-VktZmjM7ZAoWtQwbUDpMp1nEunDsT-ixYpMByyadVJUQ1S_a-pZUGqEjAHQFdlMkTC2yv11kRIiVvX4jaoZ3dTeM.jpg?r=46f",
+                preview: "https://www.youtube.com/watch?v=afJXk-RgzoQ",
             },
 
             {
@@ -333,6 +334,61 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 description: "Financial advisers share their simple tips on spending less and saving more with people looking to take control of their funds and achieve their goals.",
                 image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZk39crVaAEE2z8-fiA-bkaPUNVFll8GpjEWyKNd--74Lx01oXZPNp35XmwLzLv7nmo1NTvYoiHrUNv4kn0UfeZuN_dVr-nHRTe_84cTlapcVJx82OCGJWPgPR30BBxXBc2R.jpg?r=96c",
                 preview: "https://youtu.be/pJeQAhaRW80",
+            },
+
+            {
+                id: "anime",
+                title: "Altered Carbon Resleeved",
+                genre: "Thriller Anime",
+                comingSoon: true,
+                availDate: 2022,
+                description: "On the planet Latimer, Takeshi Kavocs must protect a tattooist while investigating the death of a yakuza boss alongside a no-nonsense CTAC.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbU0HFtzeRnlKJ-faLxW3nGHdOLPf_VP3_JdDDG5DNLV4REw_UVF0s2m_WDaKEd64op9NVFWVkEOxWWct-q-T-yEBFTeyUsnDpC3QBk0ydRrmY-iYiNhZLaIQAb4xUKJUFvg.jpg?r=7de",
+                preview: "https://www.youtube.com/watch?v=HmDxxoFslzs", // Altered Carbon Resveeled Done
+            },
+
+            {
+                id: "anime",
+                name: "Seven deadly sins",
+                genre: "Fantasy Anime",
+                comingSoon: true,
+                availDate: 2015,
+                description: "When a kingdom is taken over by tyrants, the deposed princess begins a quest to find a disbanded group of evil knights to help take back her realm.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABezRWGtm3ul0HI5O78Gf-W0dMl736UM1oBvJC2Qu0U-d3UZk28ItIgHbaJyhqOx1bIZD4RdC5wwJuHR_XTBpN6Tsv7Z4OqHVEupYlkJYdBadpzEPGfHsi53pKxPMqxB0aq9o.jpg?r=5ef",
+                preview: "https://www.youtube.com/watch?v=wxcvbL6o55M", // Seven deadly sins Done
+            },
+
+            {
+                id: "anime",
+                title: "Seis Manos",
+                genre: "Crime TV Shows, Amine Series",
+                comingSoon: true,
+                availDate: 2019,
+                description: "Orphans raised by martial arts master into a mystery involving demonic powers, drug cartels rituals and blood sacrifice.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY6LyXcwDWXnJfEgiHaeL3f73e1MG8kfDf0Hza4KMpKl2W_mbKud25BcMaLTNsb1SzSVtfQsuCWpa5C8VX62vqmDlwc9HItuXf-_BQOUiqYe89G1HfV7gEEZiZWYRmZprMXf.jpg?r=408",
+                preview: "https://www.youtube.com/watch?v=z9AMScNK5Zw", //Seis Manos Done
+            },
+
+            {
+                id: "anime",
+                title: "Spriggan",
+                genre: "Anime series",
+                comingSoon: true,
+                availDate: 2022,
+                description: "An ancient civilazation's relics on earth hold dangerous powers - it's up to ARCAM Corporatio's Spriggan to keep them out of the wrong.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY2FnAFaN117m3HmZoKjtPN7odQCI46kvmdsabV9vxlxD5Ct3cwhFLLj6TGM31E9Xu8lndrLjlVSvBjUuCMK83OKzvxtymbq131uckJIggarVt1QaxVutGTT8-Yc0nDNmbyi.jpg?r=551",
+                preview: "https://www.youtube.com/watch?v=IZJMihZ8ujg", //Seis Manos Done
+            },
+
+            {
+                id: "anime",
+                title: "Kengan Ashura",
+                genre: "Anime series",
+                comingSoon: true,
+                availDate: 2019,
+                description: "Ajro Fisheries Yoshinari Karo faces Saw Paing Yorozuka. The fix is in: the match is rigged. But Karo and his harpoon aren't following the script.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU4Q-6tODGX6XR6DUDRfx8iW25PWCDLVuLoBbzPcqCxFNlugBScF9PxVIESTGRt_Ix64KZXUeM7ALBtXlpIyJ1dxoOcN6mcEyfQoX8mMC-uJpDeyQVkbQiwIIZgMF4jBu4xn.jpg?r=d8c",
+                preview: "https://www.youtube.com/watch?v=CNuY4ymi4Fs", //Kengan Ashura Done
             },
         ],
     },
