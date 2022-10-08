@@ -338,11 +338,18 @@ let homepageVue = new Vue({ //el property of the Vue instance.
     },
         //I will only explain one function as all the others in the computed section are done in the same manner and follows the same logic
         computed: { //computed is there to help create, modify, manipulate or display data within your components in a readable, efficient manner. This also helps with updating and creating new elements as time goes on.
-            moviesComingSoonFilter() { //moviesComingSoonFilter is a function that will return an object with two properties: The movies and filter to coming soon.
-                let moviesComingSoonFilter = this.movies.filter((movie) => { //here is where we filter the movies collection to only include the desired id which we ask for line comingSoon in the 'movies'
+            comingSoonFilter() { //moviesComingSoonFilter is a function that will return an object with two properties: The movies and filter to coming soon.
+                let comingSoonFilter = this.movies.filter((movie) => { //here is where we filter the movies collection to only include the desired id which we ask for line comingSoon in the 'movies'
                     return movie.id.toLowerCase().includes("comingSoon".toLowerCase()); 
             });
-            return moviesComingSoonFilter; //the filtered list of the comingSoon movies will then be retured and showed on display 
+            return comingSoonFilter; //the filtered list of the comingSoon movies will then be retured and showed on display 
+            },
+
+            popularOnNetflixFilter() {
+                let popularOnNetflixFilter = this.movies.filter((movie) => {
+                    return movie.id.toLowerCase().includes("trepopularOnNetflix".toLowerCase());
+                });
+                return popularOnNetflixFilter;
             },
 
             trendingNowFilter() {
@@ -352,33 +359,47 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 return trendingNowFilter;
             },
 
-            documentariesFilter() {
-                let documentariesFilter = this.movies.filter((movie) => {
-                    return movie.id.toLowerCase().includes("documentaries".toLowerCase());
+            actionThrillersFilter() {
+                let actionThrillersFilter = this.movies.filter((movie) => {
+                    return movie.id.toLowerCase().includes("actionThrillers".toLowerCase());
                 });
-                return documentariesFilter;
+                return actionThrillersFilter;
             },
 
-            comedyMoviesFilter() {
-                let comedyMoviesFilter = this.movies.filter((movie) => {
+            comediesFilter() {
+                let comediesFilter = this.movies.filter((movie) => {
                     return movie.id.toLowerCase().includes("comedies".toLowerCase());
                 });
-                return comedyMoviesFilter;
+                return comediesFilter;
             },
 
-            realStoriesFilter() {
-                let realStoriesFilter = this.movies.filter((movie) => {
-                    return movie.id.toLowerCase().includes("realStories".toLowerCase());
+            horrorMoviesFilter() {
+                let horrorMoviesFilter = this.movies.filter((movie) => {
+                    return movie.id.toLowerCase().includes("horrorMovies".toLowerCase());
                 });
-                return realStoriesFilter;
+                return horrorMoviesFilter;
             },
 
-            foodWineFilter() {
-                let foodWineFilter = this.movies.filter((movie) => {
-                    return movie.id.toLowerCase().includes("foodWine".toLowerCase());
+            strongBlackLeadFilter() {
+                let strongBlackLeadFilter = this.movies.filter((movie) => {
+                    return movie.id.toLowerCase().includes("strongBlackLead".toLowerCase());
                 });
-                return foodWineFilter;
-            },   
+                return strongBlackLeadFilter;
+            }, 
+            
+            blockbusterAndSciFiFilter() {
+                let blockbusterAndSciFiFilter = this.movies.filter((movie) => {
+                    return movie.id.toLowerCase().includes("blockbusterAndSciFi".toLowerCase());
+                });
+                return blockbusterAndSciFiFilter;
+            },
+
+            animeFilter() {
+                let animeFilter = this.movies.filter((movie) => {
+                    return movie.id.toLowerCase().includes("anime".toLowerCase());
+                });
+                return animeFilter;
+            },
         },
 
         methods: { //methods are used here to to perform actions on the V-on directives in the HTML files that handle the events, these functions can also be called further on in performing actions

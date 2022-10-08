@@ -90,7 +90,7 @@ nav{
     color: var(--white);
     border: var(--headings);
     border-style: inset;
-    font: italic;
+    font-family: sans-serif;
     font-size: 14px;
     padding: 1rem;
 }
@@ -156,15 +156,6 @@ video{
     margin: 5px;
     margin: 5px;
 }
-/*  (Ek het die hover regtig probeer maak werk maar dan kry ek die die add button geskuif nie, ongelukkig hover hy nie vandag nie)
-.displayMovie:hover{
-    border-radius: 10px;
-    transform: scale(1.5);
-    box-shadow: 0 0 2px #000a;
-    object-fit: contain;
-} */
-
-
 .movie-link{
     width: 150px;
     height: 100px;
@@ -215,22 +206,6 @@ h1{
     box-shadow: 2px;
 }
 
-/* .card {
-    position: relative;
-    width: 50%;
-}
-
-
-.card .add-Btn{
-    position: absolute;
-    bottom: 0%;
-    background: transparent;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-} */
 
 
 

@@ -8,7 +8,7 @@
     <!-- CSS link-->
     <link rel="stylesheet" href="/src/assets/css/homePage.css">
     <!-- JavaScript tag-->
-    <script src="js/homepage.js" defer></script>
+    <script src="/src/js/homePage.js" defer></script>
     <!-- Vue.js tag-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
@@ -19,7 +19,7 @@
         <nav id="navbar" class="navbar">
             <!-- Navbar left containes all the movie genre's and when you click on it, it goes to the row of the selected genre except for the watchlist goes to your watchlist -->
             <div class="nav-left">
-                <a href="homepage.html">
+                <a href="/public/index.html">
                     <img src="/src/assets/images/netflixLogo.png" id="netflixlogo" alt="Netflix Logo"> 
                 </a>
                 <ul class="primary-navigation">
@@ -45,12 +45,13 @@
             </div>
             <!-- Navbar right, this is where all the other buttons are, including the search(which I removed, I just couldn't get it right), notifications and profile  -->
             <div class="nav-right">
-
+                
                 <ul class="list-nav-right">
                     <li class="category">
                         <a class="browse" href="#Kids">Kids</a>
                     </li>
                 </ul>
+                <button class="searchBox"><img class="searchBox" src="/src/assets/images/searchIcon.png" alt="search"></button>
                 <button class="notfications-btn"><img class="notification" src="/src/assets/images/notificationIcon.png" alt="Notifications"></button>
                 <button class="my-profile"><img class="my-profile" src="/src/assets/images/NetflixProfileOne.png" alt="My Profile"></button>
             </div>
@@ -70,7 +71,7 @@
         <div class="card-slices">
             <h1 id="comingSoon">Coming Soon</h1> <!-- The heading of each row and this is what the movies & tv shows are filtered by because all of them have more then one genre I decided to go on ID's to make it more simple and neat-->
             <div class="displayClassMainAxis">
-                <div v-for="(event, index) in moviesComingSoonFilter" class="displayMovie"> 
+                <div v-for="(event, index) in comingSoonFilter" class="displayMovie"> 
                     <a class="movie-link">
                         <div class="card">
                             <img :src="event.image" alt="Movie Images" class="movieImage">
@@ -84,7 +85,7 @@
 
         <!-- Category 1-->
         <div class="card-slices">
-            <h1 id="popular-on-netflix">Popular on Netflix</h1>
+            <h1 id="popularOnNetflix">Popular on Netflix</h1>
             <div class="displayClassMainAxis">
                 <div v-for="(event, index) in popularOnNetflixFilter" class="displayMovie"> 
                     <a class="movie-link">
@@ -99,7 +100,7 @@
 
         <!-- Category 2 -->
         <div class="card-slices">
-            <h1 id="trending-now">Trending Now</h1>
+            <h1 id="trendingNow">Trending Now</h1>
             <div class="displayClassMainAxis">
                 <div v-for="(event, index) in trendingNowFilter" class="displayMovie"> 
                     <a class="movie-link">
@@ -114,7 +115,7 @@
 
         <!-- Category 3 -->
         <div class="card-slices">
-            <h1 id="action-thrillers">Action-Thrillers</h1>
+            <h1 id="actionThrillers">Action-Thrillers</h1>
             <div class="displayClassMainAxis">
                 <div v-for="(event, index) in actionThrillersFilter" class="displayMovie"> 
                     <a class="movie-link">
@@ -173,9 +174,9 @@
         </div>
 
         <div class="card-slices">
-            <h1 id="BlockbusterAndSciFi">Blockbuster Exciting Sci-Fi Adventure</h1>
+            <h1 id="blockbusterAndSciFi">Blockbuster Exciting Sci-Fi Adventure</h1>
             <div class="displayClassMainAxis">
-                <div v-for="(event, index) in BlockbusterAndSciFiFilter" class="displayMovie"> 
+                <div v-for="(event, index) in blockbusterAndSciFiFilter" class="displayMovie"> 
                     <a class="movie-link">
                         <div>
                             <img :src="event.image" alt="Movie Images" class="movieImage">
@@ -190,7 +191,7 @@
         <div class="card-slices">
             <h1 id="anime">Anime & Anime Inspired</h1>
             <div class="displayClassMainAxis">
-                <div v-for="(event, index) in strongBlackLeadFilter" class="displayMovie"> 
+                <div v-for="(event, index) in animeFilter" class="displayMovie"> 
                     <a class="movie-link">
                         <div>
                             <img :src="event.image" alt="Movie Images" class="movieImage">
