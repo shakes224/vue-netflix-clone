@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Homepage</title>
+    <title>Home - Netflix</title>
     <!-- CSS link-->
     <link rel="stylesheet" href="/src/assets/css/homePage.css">
     <!-- JavaScript tag-->
@@ -84,9 +84,9 @@
 
         <!-- Category 1-->
         <div class="card-slices">
-            <h1 id="trendingNow">Trending Now</h1>
+            <h1 id="popular-on-netflix">Popular on Netflix</h1>
             <div class="displayClassMainAxis">
-                <div v-for="(event, index) in trendingNowFilter" class="displayMovie"> 
+                <div v-for="(event, index) in popularOnNetflixFilter" class="displayMovie"> 
                     <a class="movie-link">
                         <div>
                             <img :src="event.image" alt="Movie Images" class="movieImage">
@@ -99,9 +99,9 @@
 
         <!-- Category 2 -->
         <div class="card-slices">
-            <h1 id="documentaries">Documentaries</h1>
+            <h1 id="trending-now">Trending Now</h1>
             <div class="displayClassMainAxis">
-                <div v-for="(event, index) in documentariesFilter" class="displayMovie"> 
+                <div v-for="(event, index) in trendingNowFilter" class="displayMovie"> 
                     <a class="movie-link">
                         <div>
                             <img :src="event.image" alt="Movie Images" class="movieImage">
@@ -114,9 +114,9 @@
 
         <!-- Category 3 -->
         <div class="card-slices">
-            <h1 id="comedies">Comedies</h1>
+            <h1 id="action-thrillers">Action-Thrillers</h1>
             <div class="displayClassMainAxis">
-                <div v-for="(event, index) in comedyMoviesFilter" class="displayMovie"> 
+                <div v-for="(event, index) in actionThrillersFilter" class="displayMovie"> 
                     <a class="movie-link">
                         <div>
                             <img :src="event.image" alt="Movie Images" class="movieImage">
@@ -129,9 +129,9 @@
 
         <!-- Category 4 -->
         <div class="card-slices">
-            <h1 id="realStories">Real Stories</h1>
+            <h1 id="comedies">Comedies</h1>
             <div class="displayClassMainAxis">
-                <div v-for="(event, index) in realStoriesFilter" class="displayMovie"> 
+                <div v-for="(event, index) in comediesFilter" class="displayMovie"> 
                     <a class="movie-link">
                         <div>
                             <img :src="event.image" alt="Movie Images" class="movieImage">
@@ -140,12 +140,42 @@
                     </a>
                 </div>
             </div>
-        </div>   
+        </div>
+
+        <!-- Category 4 -->
+        <div class="card-slices">
+            <h1 id="horrorMovies">Horror Movies</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in horrorMoviesFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="card-slices">
+            <h1 id="strongBlackLead">Strong Black Lead</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in strongBlackLeadFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <div class="card-slices">
-            <h1 id="foodWine">Food & Wine</h1>
+            <h1 id="BlockbusterAndSciFi">Blockbuster Exciting Sci-Fi Adventure</h1>
             <div class="displayClassMainAxis">
-                <div v-for="(event, index) in foodWineFilter" class="displayMovie"> 
+                <div v-for="(event, index) in BlockbusterAndSciFiFilter" class="displayMovie"> 
                     <a class="movie-link">
                         <div>
                             <img :src="event.image" alt="Movie Images" class="movieImage">
@@ -154,7 +184,22 @@
                     </a>
                 </div>
             </div>
-        </div> 
+        </div>
+        
+        <!-- Category 4 -->
+        <div class="card-slices">
+            <h1 id="anime">Anime & Anime Inspired</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in strongBlackLeadFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>           
 </body>
 <footer>
