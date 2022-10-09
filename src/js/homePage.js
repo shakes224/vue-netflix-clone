@@ -287,7 +287,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
         
         computed: { //computed is there to help create, modify, manipulate or display data within your components in a readable, efficient manner. This also helps with updating and creating new elements as time goes on.
             comingSoonFilter() { //moviesComingSoonFilter is a function that will return an object with two properties: The movies and filter to coming soon.
-                let comingSoonFilter = this.movies.filter((movie) => { //here is where we filter the movies collection to only include the desired id which we ask for line comingSoon in the 'movies'
+                let comingSoonFilter = this.movies.filter((movie) => { 
                     return movie.id.toLowerCase().includes("comingSoon".toLowerCase()); 
             });
             return comingSoonFilter; 
@@ -314,20 +314,6 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 return comediesFilter;
             },
 
-            horrorMoviesFilter() {
-                let horrorMoviesFilter = this.movies.filter((movie) => {
-                    return movie.id.toLowerCase().includes("horrorMovies".toLowerCase());
-                });
-                return horrorMoviesFilter;
-            },
-            
-            blockbusterAndSciFiFilter() {
-                let blockbusterAndSciFiFilter = this.movies.filter((movie) => {
-                    return movie.id.toLowerCase().includes("blockbusterAndSciFi".toLowerCase());
-                });
-                return blockbusterAndSciFiFilter;
-            },
-
             animeFilter() {
                 let animeFilter = this.movies.filter((movie) => {
                     return movie.id.toLowerCase().includes("anime".toLowerCase());
@@ -336,27 +322,27 @@ let homepageVue = new Vue({ //el property of the Vue instance.
             },
         },
 
-        methods: { //methods are used here to to perform actions on the V-on directives in the HTML files that handle the events, these functions can also be called further on in performing actions
+        methods: { 
 
             addingToWatchList(event) { 
-                let watchlist = JSON.parse(localStorage.getItem("movies")); //created a variable called watchlist, this object will be parsed later from localstorage
-                for (let i = 0; i < watchlist.length; i++) { //an array of movies is created and this loops through each movie in the list to see if the id match the event
-                    if (watchlist[i].title == event.title) { //if it does or is true, then set it to the list, adds movie to the watchlist
+                let watchlist = JSON.parse(localStorage.getItem("movies")); 
+                for (let i = 0; i < watchlist.length; i++) { 
+                    if (watchlist[i].title == event.title) { 
                         this.list = true;
                     } else {
                         this.list = false;
                     }
                 }
-                //all these events will be added to the watchlist and which will then be saved back into localStorage with a JSON stringified version of itself for future use when needed later down the line
+                
                 if (this.list == true) {
                 } else {
                 if (watchlist.length < 20) {
                     watchlist.push(event);
 
-                    localStorage.setItem("movies", JSON.stringify(watchlist));  //these loops are here to make sure that the watchlist doesn't grow to full and the user will be asked to delete some before adding more if the amount goes over 20
+                    localStorage.setItem("movies", JSON.stringify(watchlist));  
                 } else if (watchlist.length >= 20) {
                     this.completeList = true;
-                    alert("Your list is full, eiter have some fun and watch it all or you'll have to delete some, sorry!");
+                    alert("List Capacity reached, eiter you watch all or you willl have to delete some, sorry!");
                 }
             }
         },
