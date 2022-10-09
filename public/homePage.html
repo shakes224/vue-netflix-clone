@@ -83,22 +83,7 @@
             </div>
         </div>
 
-        <!-- Category 1-->
-        <div class="card-slices">
-            <h1 id="popularOnNetflix">Popular on Netflix</h1>
-            <div class="displayClassMainAxis">
-                <div v-for="(event, index) in popularOnNetflixFilter" class="displayMovie"> 
-                    <a class="movie-link">
-                        <div>
-                            <img :src="event.image" alt="Movie Images" class="movieImage">
-                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
 
-        <!-- Category 2 -->
         <div class="card-slices">
             <h1 id="trendingNow">Trending Now</h1>
             <div class="displayClassMainAxis">
@@ -142,37 +127,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Category 4 -->
-        <div class="card-slices">
-            <h1 id="horrorMovies">Horror Movies</h1>
-            <div class="displayClassMainAxis">
-                <div v-for="(event, index) in horrorMoviesFilter" class="displayMovie"> 
-                    <a class="movie-link">
-                        <div>
-                            <img :src="event.image" alt="Movie Images" class="movieImage">
-                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="card-slices">
-            <h1 id="strongBlackLead">Strong Black Lead</h1>
-            <div class="displayClassMainAxis">
-                <div v-for="(event, index) in strongBlackLeadFilter" class="displayMovie"> 
-                    <a class="movie-link">
-                        <div>
-                            <img :src="event.image" alt="Movie Images" class="movieImage">
-                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
         
         <div class="card-slices">
             <h1 id="anime">Anime & Anime Inspired</h1>
