@@ -5,26 +5,26 @@ let homepageVue = new Vue({ //el property of the Vue instance.
         list: false,
         completeList: false,
     
-        movies: [ //these are all the information about the movies and TV Shows within an array. It contains the id, title, genre, comingsoon, date available, description, image and preview.
-            {   id: "trendingNow", //category of the movie/TV show
-                title: "Chef's Table Pizza", //title of the movie/TV Show
-                genre: "Social & Culture Docs, Docuseries, Food & Travel TV", //Genre's of the movie/TV Show
-                comingSoon: false, //Boolean if the movie is out=false, coming soon=true
-                availDate: 2022, //when the movie came to availibility ot when it will be available
-                description: "Dig into the best Pizzas from around the world, prepared by renowned chefs who bake passion, creativity and hard work into every slice", //short description of the movie
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQJWZeUipOPfMjKHJpsoQ2EglYXiH9YFAbhZwXUNvTEZ6R0TdYWEIdXQv_lqweQxBKMROZrOaPN42T1VGYIBwrtXU38HKgtc_AoEF9lk1GIr48B3wljzefliL5D6L20sr9Rv.jpg?r=2b0",
-                preview: "https://youtu.be/wyXnoeJoKLw",  //image and trailer URL's
+        movies: [
+            {   id: "trendingNow", 
+                title: "Get rich or die tryin'",
+                genre: "music, Hip-hop, Crime, Dramas", 
+                comingSoon: false, 
+                availDate: 2005, 
+                description: "Determined to leave his criminal days behind, an inner-city drug dealer pursues rap music, butthe aspiring artist runs into tough times", 
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYEcjQw8f-uMePEFU6LJXJbHZm-Q4aUuHhzmACLzjxwnAOSIrEQp0vUjz85DSqfKI06HNxKFeEYu58aGCez47HEQM4IPCnpIj53M7Jh18Um3ao2ravxRKswwM-U1dc3Mw-Ha9Xj8vdSY_Xf7ybx4CVY5t5TCG6ZtSos.jpg?r=663",
+                preview: "https://www.youtube.com/watch?v=yNcayNlK4jE",  
             },
     
             {
                 id: "trendingNow",
-                title: "This is 40",
-                genre: "Romantic Comedies, Comedies, Romantic Movies",
+                title: "Luckiest girl alive",
+                genre: "Movies based on books",
                 comingSoon: false,
-                availDate: 2015,
-                description: "After a big birthday, married couple Pete and Debbie wrestle with realities of parenthood, romance and getting older",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSPo-lMnp7iVFHdhwWsRuyp2eVam0EFAB0wv16MaMH7cdIAsn45bf31Wb4krHXhr0CYNyR2UldocZEVnvFcZV8hdnslNPd6yMX0.webp?r=fbc",
-                preview: "https://youtu.be/46sZURieja0",
+                availDate: 2022,
+                description: "A writer's perfectly crafted New York City life starts to unravel when a true crime documentary forces her to confront her harrowing high school history",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb6vQVYCLrYJyy69xzXVyPtiWipE376iK7D8zTlZjy3cckjcMmuGgtg0v6yMg5iIYP_9rlQT5cwfaN4gbKCJdg12izmLuw6BscI4appTI4EIsSF-4y57Gn-c_NO6JxyXYg_QqWjFkASarHJYnn5NWxAcCzuXGhoQULWi03bH4RlyYyF9KnYe-XI2tSlIivA.jpg?r=e28",
+                preview: "https://www.youtube.com/watch?v=B_XUlbPW-eY",
             },
     
             {
@@ -170,60 +170,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 preview: "https://youtu.be/aW_0MO-XKog",
             },
     
-            {
-                id: "realStories",
-                title: "Amazing Interiors",
-                genre: "British, Home & Garden Reality TV, Lifestyle",
-                comingSoon: false,
-                availDate: 2018,
-                description: "Meet eccentric homeowners whose seemingly ordinary spaces are full of surprises, from a backyard roller coaster to an indoor aquarium.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABf7OktOIOFUkZaHrlUToaFAUhjgB5GQkHC2OQ5lh6-1djdoj8fMfUcau6hhiGrT49ROJC24mQkLn83XElEHBqigR-Etrc89FrEh6lz_Eo_fcItfjBfc77n46tstnXGtuTV6F.jpg?r=cd9",
-                preview: "https://youtu.be/ia-Hclo-ITs",
-            },
-    
-            {
-                id: "realStories",
-                title: "Million Pound Menu",
-                genre: "British, Food & Travel TV, Reality TV",
-                comingSoon: false,
-                availDate: 2019,
-                description: "Next-gen restauranteurs get the chance to open their own pop-up eateries to impress the paying public -- and a panel of discerning U.K. investors.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXy0Oa90CCQ0Q0dZaQlEaWe4MuP8gOoL_uJhLlt9SYAex3YA6fTfmDgkme3SvhXUZ0qYW_nVPGp4yFcIAT1tC5KuSp2QsquyFukq-02Cl8BIlYrBcof_tjM3ZdOm6SbNuNDS.jpg?r=98c",
-                preview: "https://youtu.be/0Ml4LdqdQHg",
-            },
-    
-            {
-                id: "realStories",
-                title: "A Dog for Life",
-                genre: "Docuseries, South African, Family Watch Together TV",
-                comingSoon: false,
-                availDate: 2021,
-                description: "In this reality series, unique Cape Town families get matched with rescue dogs to find the perfect four-legged best friends they never know they needed",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZlf52g05LZMMHs704UxB9_nw282A6e8biutcTuI-aoIDWji3OnQFkUKhzJeEcKfqgJDreQxA9XzxwzhkQ0lN1z8BAjz0ORKgb4.webp?r=afd",
-                preview: "https://youtu.be/uWR0iQ2McgA",
-            },
-    
-            {
-                id: "realStories",
-                title: "Dark Tourist",
-                genre: "Social & Cultural Docs, Docuseries, New Zealand",
-                comingSoon: false,
-                availDate: 2018,
-                description: "From a nuclear lake to a haunted forest, journalist David Farrier visits unusual -- and often macabre -- tourism spots around the world.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTVe5RbE5gFRQ44v0ke8BE5SsWSIIFz9gJRVy7S6Yvi9OroRRhFo8Fk1fYg6Je-CdeuHAd_CT1fI8Gr-g-jo4NbwuLTILLG-SuU3HYmRr8XoIG-8ha5z9_OYla0vu8KIe6Wl.jpg?r=5dd",
-                preview: "https://youtu.be/8vV1xaLCONw",
-            },
-    
-            {
-                id: "realStories",
-                title: "Untold - The Race of the Century",
-                genre: "Documentary Films, Sports Movies",
-                comingSoon: false,
-                availDate: 2022,
-                description: "The Australia II yacht crew looks back on the motivation, dedication and innovation that led to their historic victory at the 1983 America's Cup.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfwzf65eDiphLZYcpjbbS3Lb6mMgzOv528kuO4PxUzLzWkXvK6zY0nOZnMHtqjzpRtmHQEvbiz13nfqFWAaUrrs_v6eb_oAMgZfKuQE9Q3NM2rAQkKl1S6JIujXlnFKojafK.jpg?r=51b",
-                preview: "https://youtu.be/PSmns9QWPiE",
-            },
+           
     
             {
                 id: "actionThrillers",
@@ -255,35 +202,35 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2019,
                 description: "Presumed dead for 5 years before being discovered on a remote Pacific island, billionare playboy Oliver returns home a changed man.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfvrd4Y728WPHJLWxM5nc5H0telb2_ty5HYOs_pDzGpFpCfxpDCzOASEa5DD6jd3KILnLJ2eT8E-Iicw1WuSqNJowZR70AQsN3A.jpg?r=19e",
-                preview: "https://youtu.be/2oKbs4jAf7M",//YT vid needed arrow done
+                preview: "https://www.youtube.com/watch?v=oc9Nae664vo",//arrow
                 
             },
 
             {
                 id: "actionThrillers",
                 title: "Assassin's creed",
-                genre: "Documentary Films, Food & Travel TV, Lifestyle",
+                genre: "",
                 comingSoon: false,
                 availDate: 2016,
                 description: "In this adapttation of the critically acclaimed video game franchise, a man on death row is rescued from execution by a mysterious organization.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa9Q09T7lbNf1ktflr0C2CNfnToal6ttnQgMexCFPOn39qgj9qG0NQRpbqOsIWhYeZwyv22A07wC61eFHARURui05zfVsTjhymM.jpg?r=dac",
-                preview: "https://youtu.be/iSpglxHTJVM",//YT vid needed Assassin
+                preview: "https://www.youtube.com/watch?v=4haJD6W136c",//Assassin's creed
             },
 
             {
-                id: "actionThrillers",//must fix
+                id: "actionThrillers",
                 title: "Athena",
                 genre: "Action thriller",
                 comingSoon: false,
                 availDate: 2022,
-                description: "Actor Zac Efron journeys around the world with wellness expert Darin Olien in a travel show that explores healthy, sustainable ways to live.",
+                description: "After his little brother is murderedin cold blood, no amount of grief or pleas for pleace will stop Kaim from getting answers even if it means war.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABct29rL9I-y3V0IaouT3RvgKzCHqqbbrotthIsGJsvQHE7JGiTDG2-ZLE4nJEGVJZ668Lf9Qan-S7PO-o5BLm-edKuy3XUhkKcRTtQ1zwj4RP8L0hPUIfBMf8DUeN_8ay7mt.jpg?r=ed7",
-                preview: "https://www.youtube.com/watch?v=vRunUkdkK8s",
+                preview: "https://www.youtube.com/watch?v=vRunUkdkK8s", //Athena
             },
 
             {
                 id: "comingSoon",
-                title: "Rick and Morty: Season 6",
+                title: "Rick and Morty",
                 genre: "Sci-fi TV, Sitcoms, Adult Animation",
                 comingSoon: true,
                 availDate: 2023,
@@ -293,47 +240,47 @@ let homepageVue = new Vue({ //el property of the Vue instance.
             },
 
             {
-                id: "comingSoon",//Done
+                id: "comingSoon",
                 title: "Tyler Perry's A Madea Homecoming",
                 genre: "Comedies",
                 comingSoon: true,
                 availDate: 2022,
                 description: "Madea's back - Hallelujer! And she's not putting up with any nonsense as family drama erupts at her great-grandson's college graduation celebration.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUJpM9CPy2oJ23YqWvqs0BO4m4k0axeHDvhAvWKR6sG-VktZmjM7ZAoWtQwbUDpMp1nEunDsT-ixYpMByyadVJUQ1S_a-pZUGqEjAHQFdlMkTC2yv11kRIiVvX4jaoZ3dTeM.jpg?r=46f",
-                preview: "https://www.youtube.com/watch?v=afJXk-RgzoQ",
+                preview: "https://www.youtube.com/watch?v=afJXk-RgzoQ",//Madea
             },
 
             {
                 id: "comingSoon",
-                title: "Designing Miami",
-                genre: "Lifestyle, Reality TV, US TV Shows",
+                title: "The School for good and evil",
+                genre: "Familly, movies, Teen Movies",
                 comingSoon: true,
-                availDate: 2023,
-                description: "For Ray and Eilyn Jimenez, marriage and business are a perfect match as their respective interior design firms remodel homes for high-end Miami clients.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb4Em4mwD8NvdNirGk3jZ0IL6_8hfVi-IkPNTDscL7AZzSHtmZz8-jVz3EWkS9NNr3fS3FoxS1MroWYuvjwu73oUrD0oT-ZEvYR6KLghP3A8VRMF2cbXDL7hYPJZiHMBogQZ.jpg?r=37c",
-                preview: "https://youtu.be/Cc_tUE6o6tg",
+                availDate: 2022,
+                description: "Best friends Sophia and Agatha find their bond put to the test when they're whisked away to a magical school for future fairy-tale heroes and villains.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeeiPf-mLSl5ytYOsDglFyh7oFdfcfANaCHq0jWtRu8d5aq14RY_P5dm-AZ24eNzWqs0TkVkwrnf-B3GVMaLTp936xFAKRVsrIvIbIvkYppbtnFNUve-5KqVX7FN7joTMLpv.jpg?r=606",
+                preview: "https://www.youtube.com/watch?v=aftysDQ4hpI",//The School for good and evil
             },
 
             {
                 id: "comingSoon",
-                title: "Illumination's Minions & More 1",
-                genre: "Family movies, Kids & Family Movies, Comedies",
+                title: "Snabba cash",
+                genre: "Crime TV shows",
                 comingSoon: true,
                 availDate: 2023,
                 description: "This collection of Minions shorts from the Despicable Me franchise includes mini-movies like Training Wheels, Puppy and Yellow Is the New Black.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaCr6pAIxFJQQ_IRlYxkx8gzhqrK9dpkiUpSBwF29McybJ3S1QXWErVTO7qdoIty2P9NU9RG_hl6fMpKOoHgGyi2z8s9uy0MvIw.webp?r=6b4",
-                preview: "https://youtu.be/6DxjJzmYsXo",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaTrCAbICS46a9ROGY_aPcdmB2rLmVybMOM3SZiBz0f04DX8FNqJw7MpcWULq0GATBGz4WMkJPT8Sgvvqlcg8eROhLrPjQTap4ebEf_A0IMCP_tbHukSpcokUGXfdnVnLQNot2VDFwTQj-DXFSZHaUY0RgkLbXwcHufBdmqVXgOsNvdHIuMMk3TPXaZWJ1mrFKB1pj95ur_IRLe6KwRpkd8If6kcCWuw1I90UBix707ZahIJhyRHGITDCEFNFIRVNonowhgB9-pIsIeSUlgqiS_8.jpg?r=334",
+                preview: "https://www.youtube.com/watch?v=yHFBsGdIBzs",//Snabba cash
             },
 
             {
                 id: "comingSoon",
-                title: "Get Smart with Money",
-                genre: "Documentary Films, Lifestyle",
+                title: "Wild is the wind",
+                genre: "Social Issues, African crime",
                 comingSoon: true,
-                availDate: 2023,
-                description: "Financial advisers share their simple tips on spending less and saving more with people looking to take control of their funds and achieve their goals.",
-                image: "https://occ-0-4305-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZk39crVaAEE2z8-fiA-bkaPUNVFll8GpjEWyKNd--74Lx01oXZPNp35XmwLzLv7nmo1NTvYoiHrUNv4kn0UfeZuN_dVr-nHRTe_84cTlapcVJx82OCGJWPgPR30BBxXBc2R.jpg?r=96c",
-                preview: "https://youtu.be/pJeQAhaRW80",
+                availDate: 2022,
+                description: "Racial tensions and corruption come to a head in a small segrgated town after police find a body of a young Afrikaner girl in the bush.",
+                image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYaZhjwsDfldIuyLgJ-wrNiL4cw9kakMJ-kO9yXO6fDFm1aHZmORrB9O27EIbCqB5tDvIA_DNvQSKbn1uC4b2jx9kV2iEv9ZYgKhIkAVvHCPEcEQlEsWnuGJYYM1YJTE8XoR.jpg?r=876",
+                preview: "https://youtu.be/pJeQAhaRW80",//must fix  preview
             },
 
             {
