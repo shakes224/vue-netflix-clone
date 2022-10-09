@@ -284,20 +284,13 @@ let homepageVue = new Vue({ //el property of the Vue instance.
             },
         ],
     },
-        //I will only explain one function as all the others in the computed section are done in the same manner and follows the same logic
+        
         computed: { //computed is there to help create, modify, manipulate or display data within your components in a readable, efficient manner. This also helps with updating and creating new elements as time goes on.
             comingSoonFilter() { //moviesComingSoonFilter is a function that will return an object with two properties: The movies and filter to coming soon.
                 let comingSoonFilter = this.movies.filter((movie) => { //here is where we filter the movies collection to only include the desired id which we ask for line comingSoon in the 'movies'
                     return movie.id.toLowerCase().includes("comingSoon".toLowerCase()); 
             });
-            return comingSoonFilter; //the filtered list of the comingSoon movies will then be retured and showed on display 
-            },
-
-            popularOnNetflixFilter() {
-                let popularOnNetflixFilter = this.movies.filter((movie) => {
-                    return movie.id.toLowerCase().includes("trepopularOnNetflix".toLowerCase());
-                });
-                return popularOnNetflixFilter;
+            return comingSoonFilter; 
             },
 
             trendingNowFilter() {
@@ -327,13 +320,6 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 });
                 return horrorMoviesFilter;
             },
-
-            strongBlackLeadFilter() {
-                let strongBlackLeadFilter = this.movies.filter((movie) => {
-                    return movie.id.toLowerCase().includes("strongBlackLead".toLowerCase());
-                });
-                return strongBlackLeadFilter;
-            }, 
             
             blockbusterAndSciFiFilter() {
                 let blockbusterAndSciFiFilter = this.movies.filter((movie) => {
